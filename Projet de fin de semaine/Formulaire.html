@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire</title>
+    <link href="Formulaire.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <script src="Formulaire.js"></script>
+    <header>
+    <div class="container" style="display:flex">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close"></a>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Medias.html">Médias</a></li>
+                <li><a href="Swiper.html">Swiper</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <h1>Formulaire</h1>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    </header>
+    <main>
+        <div class="formulaire">
+            <form id="myForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+
+                <input type="submit" value="Envoyer" onclick="submitForm()">
+                <input type="button" value="Reset" onclick="resetForm()">
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

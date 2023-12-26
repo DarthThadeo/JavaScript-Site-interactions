@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper</title>
+    <link rel="stylesheet" href="Swiper.css" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    
+</head>
+<body>
+    <header>
+        <div class="container" style="display:flex">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close"></a>
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="Medias.html">Médias</a></li>
+                    <li><a href="Formulaire.html">Formulaire</a></li>
+                </ul>
+            </div>
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <h1>Memes</h1>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/1024289302890426469/1189241231876829254/star_wars_saga_meme.jpg?ex=659d7234&is=658afd34&hm=79ef618dd0dde48176ffb3dcc210730d1408be1202110d6d73c65f0615d266d2&" /></div>
+                <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/1024289302890426469/1189241262398787614/point_break_meme.jpg?ex=659d723b&is=658afd3b&hm=fade47c3de8a2cd9ff7c712aa5696519bc7d6ba362c27f59c3dd303fabce9038&" /></div>
+                <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/1024289302890426469/1189241384952156160/age_of_empire_meme.jpg?ex=659d7259&is=658afd59&hm=c230866eec7ef850c86891b8c04ee2cc223268e483657dac1d9e1484f3f4c1c6&" /></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="Swiper.js"></script>
+    </main>
+</body>
+</html>
